@@ -15,9 +15,7 @@
     background-color: #e8e8e8;
     padding: 1vh;
     opacity: 0.9;
-    height: 80vh;
     max-height: 80vh;
-    width: 80vw;
     max-width: 80vw;
-    overflow: scroll;
+    overflow-y: scroll;
 }

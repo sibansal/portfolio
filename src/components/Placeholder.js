@@ -23,13 +23,16 @@ class Placeholder extends Component
                 <div style={{"font-size":"0.5em"}}>
                     {this.props.sq}%
                 </div>
+                <div style={{"font-size":"0.4em", "margin-top":"1em"}}>
+                    <strong>{this.props.skill}</strong>
+                </div>
             </div>
         )
     }
 }
 
 Placeholder.defaultProps={
-    "icon":"python","sq":"10","color":"#e8e8e8","bgcolor":"#1d1d1d"
+    "icon":"python","sq":"10","color":"#e8e8e8","bgcolor":"#1d1d1d","skill":"python"
 }
 
 export default Placeholder

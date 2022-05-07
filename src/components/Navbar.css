@@ -30,7 +30,9 @@
             transition-duration: 1s;
 }
 
-.navbar .nav .link:hover
+
+.navbar .nav .link:hover,
+.navbar .nav .link:active
 {
     background-color: #ededee;
     color: #202020;

@@ -8,9 +8,9 @@ class Skills extends Component
     {        
         return (
         <div className="wrapper skills">
-            <h2>Skills</h2>
             <div className='content'>
-                {skills['skills'].map(d=><Placeholder icon={d['skill']} sq={d['sq']}/>)}
+                <h2>Skills</h2>
+                {skills['skills'].map(d=><Placeholder icon={d['icon']} sq={d['sq']} skill={d['skill']}/>)}
             </div>
         </div>
         )

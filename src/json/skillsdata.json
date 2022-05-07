@@ -2,33 +2,44 @@
     "skills":
     [
         {
-            "skill":"fab fa-java",
-            "sq":"70"
+            "icon":"fab fa-java",
+            "sq":"70",
+            "skill":"Java"
         },
         {
-            "skill":"fab fa-js",
-            "sq":"65"
+            "icon":"fab fa-python",
+            "sq":"70",
+            "skill":"Python"
         },
         {
-            "skill":"fab fa-php",
-            "sq":"70"
+            "icon":"fab fa-js",
+            "sq":"65",
+            "skill":"Javascript"
         },
         {
-            "skill":"fas fa-database",
-            "sq":"65"
+            "icon":"fab fa-react",
+            "sq":"20",
+            "skill":"React JS"
         },
         {
-            "skill":"fab fa-html5",
-            "sq":"70"
+            "icon":"fab fa-php",
+            "sq":"70",
+            "skill":"PHP"
         },
         {
-            "skill":"fab fa-css3",
-            "sq":"60"
+            "icon":"fas fa-database",
+            "sq":"65",
+            "skill":"RDBMS"
         },
         {
-            "skill":"fab fa-python",
-            "sq":"70"
+            "icon":"fab fa-html5",
+            "sq":"70",
+            "skill":"Html"
+        },
+        {
+            "icon":"fab fa-css3",
+            "sq":"60",
+            "skill":"CSS"
         }
-
     ]
 }

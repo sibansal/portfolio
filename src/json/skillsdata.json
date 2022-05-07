@@ -1,0 +1,34 @@
+{
+    "skills":
+    [
+        {
+            "skill":"fab fa-java",
+            "sq":"70"
+        },
+        {
+            "skill":"fab fa-js",
+            "sq":"65"
+        },
+        {
+            "skill":"fab fa-php",
+            "sq":"70"
+        },
+        {
+            "skill":"fas fa-database",
+            "sq":"65"
+        },
+        {
+            "skill":"fab fa-html5",
+            "sq":"70"
+        },
+        {
+            "skill":"fab fa-css3",
+            "sq":"60"
+        },
+        {
+            "skill":"fab fa-python",
+            "sq":"70"
+        }
+
+    ]
+}

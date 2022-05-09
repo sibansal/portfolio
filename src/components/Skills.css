@@ -17,5 +17,6 @@
     opacity: 0.9;
     max-height: 80vh;
     max-width: 80vw;
+    overflow-x: hidden;
     overflow-y: scroll;
 }

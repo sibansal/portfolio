@@ -17,17 +17,16 @@
     border: 0.5px solid #ededee;
     border-radius: 1rem;
     display: inline-block;
-    font-size: 0.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     padding: 0.5rem;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
-    -webkit-transition-property: background-color;
-    -o-transition-property: background-color;
     transition-property: background-color;
-    -webkit-transition-duration: 1s;
-         -o-transition-duration: 1s;
-            transition-duration: 1s;
+    transition-duration: 1s;
+    opacity: 0.9;
+    min-width: 5vw;
+    text-align: center;
 }
 
 
@@ -36,6 +35,7 @@
 {
     background-color: #ededee;
     color: #202020;
+    opacity: 1;
 }
 
 .navbar-top
@@ -55,4 +55,18 @@
 {
     display: none;
     height: 2rem;
+}
+
+@media screen and (max-width:800px),
+screen and (max-height:700px) {
+    .nav
+    {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 50%;
+        left: 0;
+        text-align: left;
+        transform: translateY(-50%);
+    }
 }

@@ -8,13 +8,10 @@ class Navbar extends Component
         return (
             <nav className="navbar navbar-main">
                 <ul className="nav">
-                    <li><NavLink to="/" className="link">Home</NavLink></li>
-                    <li><NavLink to="/skills" className="link">Skills</NavLink></li>
-                    <li><NavLink to="/projects" className="link">Projects</NavLink></li>
-                    {/* <li>
-                        <a target="_new"
-                        href="https://tawk.to/chat/6276e858b0d10b6f3e7119cd/1g2g7n7op" className="link">Contact</a>
-                    </li> */}
+                    <li title="Home"><NavLink to="/" className="link"><i class="fas fa-home"></i></NavLink></li>
+                    <li title="Projects"><NavLink to="/projects" className="link"><i class="fas fa-building"></i></NavLink></li>
+                    <li title="Skills"><NavLink to="/skills" className="link"><i class="fas fa-hammer"></i></NavLink></li>
+                    <li title="Contact"><NavLink to="/contact" className="link"><i class="fas fa-phone"></i></NavLink></li>
                 </ul>
             </nav>
         )

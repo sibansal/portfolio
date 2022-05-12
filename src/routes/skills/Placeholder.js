@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+library.add(fab)
+library.add(fas)
 class Placeholder extends Component
 {
     render()
@@ -17,6 +23,7 @@ class Placeholder extends Component
                 }
             }>
                 <i className={this.props.icon}></i>
+                <FontAwesomeIcon icon={this.props.icon} />
                 <div style={{"width":"100%","border":"1px solid "+this.props.color, "height":"1vh", "font-size":".5em"}}>
                 <div style={{"width":this.props.sq+"%","background-color":this.props.color,"height":"100%","font-size":".5em"}}>
                 </div></div>

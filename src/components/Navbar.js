@@ -1,6 +1,8 @@
 import React,{Component} from "react";
 import { NavLink } from 'react-router-dom';
 import "./Navbar.css";
+import { faBuilding, faEnvelope, faHammer, faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 class Navbar extends Component
 {
     render()
@@ -8,10 +10,26 @@ class Navbar extends Component
         return (
             <nav className="navbar navbar-main">
                 <ul className="nav">
-                    <li title="Home"><NavLink to="/" className="link"><i class="fas fa-home"></i></NavLink></li>
-                    <li title="Projects"><NavLink to="/projects" className="link"><i class="fas fa-building"></i></NavLink></li>
-                    <li title="Skills"><NavLink to="/skills" className="link"><i class="fas fa-hammer"></i></NavLink></li>
-                    <li title="Contact"><NavLink to="/contact" className="link"><i class="fas fa-phone"></i></NavLink></li>
+                    <li title="Home">
+                        <NavLink to="/" className="link">
+                            <FontAwesomeIcon icon={faHome} />
+                        </NavLink>
+                    </li>
+                    <li title="Projects">
+                        <NavLink to="/projects" className="link">
+                            <FontAwesomeIcon icon={faBuilding} />
+                        </NavLink>
+                    </li>
+                    <li title="Skills">
+                        <NavLink to="/skills" className="link">
+                            <FontAwesomeIcon icon={faHammer} />
+                        </NavLink>
+                    </li>
+                    <li title="Contact">
+                        <a href="mailto:queries@sibansal.dev" className="link">
+                            <FontAwesomeIcon icon={faEnvelope} />
+                        </a>
+                    </li>
                 </ul>
             </nav>
         )

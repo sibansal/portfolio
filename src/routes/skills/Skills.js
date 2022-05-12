@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Skills.css'
 import Placeholder from './Placeholder';
-import skills from '../json/skillsdata.json';
+import skills from '../../json/skillsdata.json';
 class Skills extends Component
 {
     render()

@@ -31,7 +31,7 @@
 
 
 .navbar .nav .link:hover,
-.navbar .nav .link:active
+.navbar .nav .link.active
 {
     background-color: #ededee;
     color: #202020;
@@ -45,7 +45,7 @@
     left:0;
     max-width: 100%;
     padding: 2px;
-    position: fixed;
+    position: absolute;
     text-align: center;
     top:0;
     width: 100vw;
@@ -63,10 +63,10 @@ screen and (max-height:700px) {
     {
         display: flex;
         flex-direction: column;
-        position: fixed;
+        position: absolute;
         top: 50%;
         left: 0;
-        text-align: left;
+        text-align: center;
         transform: translateY(-50%);
     }
 

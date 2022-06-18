@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Skills from "../routes/skills/Skills";
 import Projects from "../routes/projects/Projects";
 import "./Container.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 class Container extends Component
 {

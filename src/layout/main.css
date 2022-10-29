@@ -1,0 +1,15 @@
+@import './../assets/css/_vars.css';
+
+.title
+{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title-hr
+{
+    background-color: var(--color);
+    height: 0.5vh;
+    margin: 0 auto;
+    width: 1vw;
+}

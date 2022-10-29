@@ -1,0 +1,33 @@
+.hero
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo
+{
+    border-radius: 50%;
+    height: 20vw;
+    width: 20vw;
+    min-height: 256px;
+    min-width: 256px;
+}
+
+.intro
+{
+    font-size: 10vw;
+}
+
+.tagline
+{
+    font-size: 5vw;
+}
+.arrow
+{
+    height: 5vh;
+    width: 5vh;
+}

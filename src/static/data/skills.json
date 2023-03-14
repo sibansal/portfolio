@@ -1,0 +1,33 @@
+{
+    "framework":[
+        ["Bootstrap"					,	60],
+        ["React JS"						,	60]
+    ],
+    "tool":[
+        ["audacity"						,	60],
+        ["affinity designer"			,	60],
+        ["affinity photo"				,	60],
+        ["eclipse"						,	60],
+        ["jenkins"						,	60],
+        ["photoshop cs6"				,	60],
+        ["vs code"						,	60]
+    ],
+    "language":
+    [
+        ["c"							,	60],
+        ["java"							,	60],
+        ["javascript"					,	60],
+        ["latex"						,	60],
+        ["php"							,	60],
+        ["python"						,	60],
+        ["sql"							,	60]
+    ],
+    "utility":
+    [
+        ["algorithms"					,	60],
+        ["data structure"				,	60],
+        ["functional programming"		,	60],
+        ["json"							,	60],
+        ["regular expressions"			,	60]
+    ]
+}

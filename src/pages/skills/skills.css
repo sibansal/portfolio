@@ -1,0 +1,47 @@
+.skills
+{
+    background-color: var(--bg_color_alt);
+    background-image: url(./../../static/svg/skills.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 2.5vw right 2.5vw;
+    background-size: 20% 20%;
+    background-attachment: scroll;
+}
+
+
+.skills.layout .content
+{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    width: 100%;
+}
+
+.skills.layout .content table
+{
+    align-self: flex-start;
+    border-radius: 2%;
+    flex-basis: 40%;
+    flex-grow: 0;
+	flex-shrink: 0;
+    margin: 2vh 2.5%;
+    padding: 0 2.5;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.skills.layout .content table tr th
+{
+    text-transform: uppercase;
+}
+
+.skills.layout .content table tr td:first-child
+{
+    text-transform: capitalize;
+}
+
+.skills.layout .content table tr td:last-child::after
+{
+    content: ' %';
+}

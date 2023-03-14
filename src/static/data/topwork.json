@@ -1,0 +1,20 @@
+{
+    "academic":     [
+                        "AI based temperature prediction simulation deployed on Linode.",
+                        "Cloud based image hosting service deployed on Digital Ocean Droplet.",
+                        "AES based image encrytion service deployed using jsp servlet on tomcat server.",
+                        "Card matching memory game developed in java using swing components."
+                    ],
+
+    "commercial":   [
+                        "Mock UP Generator for book store.",
+                        "Components based cost calculation system for game store.",
+                        "Payment gateway enhancement for a leading NGO."
+                    ],
+
+    "volunteered":  [
+                        "CAPTCHA based validation mechanism development for Indian Academic Origins App.",
+                        "Data annotation for redical posts analysis research.",
+                        "Website developement for an educational institution"
+                    ]
+}

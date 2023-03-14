@@ -1,0 +1,23 @@
+.about
+{
+    background-color: var(--bg_color_alt);
+    background-attachment: scroll;
+}
+
+.about.layout .content
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    text-align: left;
+}
+
+ .about.layout .content div
+{
+    text-align: justify;
+}
+
+ .about.layout .content ul
+{
+    padding-left: 3%;
+}

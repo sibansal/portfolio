@@ -1,3 +1,8 @@
+.topwork.layout .content
+{
+    padding: 2vw;
+}
+
 .topwork.layout .content >*
 {
     margin: 5vh auto;

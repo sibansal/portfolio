@@ -10,7 +10,7 @@ class About extends Component
                 <div className='content'>
                     <div>
                         <p>
-                            I am a tech enthisiat from my childhood so, I pursued technical education and I want to grow more
+                            I am a tech enthusiast from my childhood so, I pursued technical education and I want to grow more
                             in the field and take best steps to do so and over the time I realize technology is not about me but
                             about us. In any good working system there are hundred and thousand of components working
                             together to run a system smoothly which perfectly make sense as a great team work. If I am 1 then

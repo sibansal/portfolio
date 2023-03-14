@@ -1,34 +1,54 @@
-.hero
-{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    background-attachment: scroll;
-}
-
-.logo
+.hero .logo
 {
     border-radius: 50%;
     height: 20vw;
     width: 20vw;
     min-height: 256px;
     min-width: 256px;
+    animation: 2s zoom-in linear;
 }
 
-.intro
+.hero .intro
 {
+    font-family: "Times New Roman", Times, serif;
     font-size: 10vw;
+    font-weight: bold;
+    animation: 3s fade-in linear;
 }
 
-.tagline
+.hero .tagline
 {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 5vw;
+    font-style: italic;
+    animation: 5s fade-in linear;
 }
-.arrow
+
+.hero .arrow
 {
     height: 5vh;
     width: 5vh;
+    padding-bottom: 2vh;
+}
+
+.hero .arrow:first-child
+{
+    animation: 1s animateArrow 4s linear infinite;
+}
+
+.hero .arrow:last-child
+{
+    animation: 1s animateArrow 4s linear infinite;
+}
+
+@media (max-width: 768px){
+    .hero .intro
+    {
+        font-size: 15vw;
+    }
+
+    .hero .tagline
+    {
+        font-size: 10vw;
+    }
 }

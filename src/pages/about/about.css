@@ -2,6 +2,12 @@
 {
     background-color: var(--bg_color_alt);
     background-attachment: scroll;
+    color: var(--color_alt);
+}
+
+.about h2
+{
+    padding-top: 2vh;
 }
 
 .about.layout .content

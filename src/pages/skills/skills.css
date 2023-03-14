@@ -6,6 +6,7 @@
     background-position: bottom 2.5vw right 2.5vw;
     background-size: 20% 20%;
     background-attachment: scroll;
+    color: var(--color_alt);
 }
 
 
@@ -38,6 +39,7 @@
 
 .skills.layout .content table tr td:first-child
 {
+    min-width: 200px;
     text-transform: capitalize;
 }
 

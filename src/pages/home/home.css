@@ -28,7 +28,6 @@
 {
     height: 5vh;
     width: 5vh;
-    padding-bottom: 2vh;
 }
 
 .hero .arrow:first-child
@@ -39,6 +38,7 @@
 .hero .arrow:last-child
 {
     animation: 1s animateArrow 4s linear infinite;
+
 }
 
 @media (max-width: 768px){

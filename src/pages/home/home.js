@@ -2,6 +2,7 @@ import React,{ Component } from 'react';
 import './home.css'
 import logo from './../../assets/img/dp.jpg'
 import arrow from './../../assets/img/arrow.svg'
+import video from './../../static/mp4/hero.mp4'
 class Home extends Component
 {
     render()
@@ -9,6 +10,11 @@ class Home extends Component
         return (
             <div className='layout'>
                 <div className='hero'>
+                    <div className='overlay'>
+                            <video width='100%' height='100%' autoPlay loop muted>
+                                <source src={video} type="video/mp4"/>
+                            </video>
+                    </div>
                 <div><img className='logo' src={logo} alt='Simran Bansal'/></div>
                 <div className='intro'>I'm Simran Bansal</div>
                 <div className='tagline'>A Software Engineer</div>

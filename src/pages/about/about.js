@@ -10,14 +10,12 @@ class About extends Component
                 <div className='content'>
                     <div>
                         <p>
-                            I am a tech enthusiast from my childhood so, I pursued technical education and I want to grow more
-                            in the field and take best steps to do so and over the time I realize technology is not about me but
-                            about us. In any good working system there are hundred and thousand of components working
-                            together to run a system smoothly which perfectly make sense as a great team work. If I am 1 then
-                            team of two is 11 and three is 111. I do not believe in impression but expression so most of time I
-                            build my projects from scratch and there is 70% success rate as of now.
+                        Since my childhood, I've had a deep passion for technology which drove me to pursue technical education. My thirst for knowledge and growth in this field has only intensified over time. However, I've come to realize that technology is not just about me, but about us. A good working system involves hundreds and thousands of components working together as a team to achieve a common goal. If I am 1, then a team of two is 11, and three is 111. Together, we can accomplish great things.
                         </p><br />
-                        Some of undocumented things I am good at:<br />
+                        <p>
+                        When it comes to my projects, I believe in expression rather than just leaving an impression. That's why I often build them from scratch, resulting in a 70% success rate as of now.
+                        </p><br />
+                        Here are some of the undocumented skills I possess that you might find interesting:<br />
                         <ul>
                             <li>Event coordination</li>
                             <li>Graphic design</li>
@@ -25,12 +23,12 @@ class About extends Component
                             <li>Strategic Planning</li>
                             <li>Teaching</li>
                         </ul><br/>
-                        Some of documented things I am good at:<br />
+                        I'm also proficient in the following documented skills:<br />
                         <ul>
                             <li>Software development</li>
                             <li>Web development</li>
                         </ul><br/>
-                        Some of the things I am quite good at messing up:<br />
+                        Now, let's talk about some of the things I'm not so good at:<br />
                         <ul>
                             <li>Badminton</li>
                             <li>Dancing</li>
@@ -38,13 +36,13 @@ class About extends Component
                             <li>Singing</li>
                             <li>Writing</li>
                         </ul><br/>
-                        Some of the things not made for me:<br/>
+                        Finally, there are some things that are just not meant for me:<br/>
                         <ul>
                             <li>Good handwriting</li>
                             <li>Long lectures</li>
                             <li>Outdoor sports</li>
                         </ul><br/>
-                        Thank you for visiting my website with patience and your valuable time investment
+                        I appreciate your patience and valuable time investment in visiting my website. Please feel free to reach out to me if you have any questions or would like to discuss potential collaborations.
                     </div>
                 </div>
             </div>

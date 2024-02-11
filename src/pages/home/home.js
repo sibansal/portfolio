@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
 import './home.css'
-import logo from './../../assets/img/dp.jpg'
+import logo from './../../assets/img/dp.png'
 import arrow from './../../assets/img/arrow.svg'
 import video from './../../static/mp4/hero.mp4'
 class Home extends Component

@@ -1,11 +1,13 @@
 .hero .logo
 {
+    border: 1vw solid #ffffff;
+    box-sizing: border-box;
     border-radius: 50%;
     height: 20vw;
     width: 20vw;
     min-height: 256px;
     min-width: 256px;
-    animation: 2s zoom-in linear;
+    animation: 2s fade-in linear;
 }
 
 .hero .overlay

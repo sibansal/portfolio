@@ -1,37 +1,16 @@
 @keyframes animateArrow
 {
-    0%
+    0%, 100%
     {
        transform: translateY(-1vh);
     }
-    25%
+    25%, 75%
     {
         transform: translateY(0vh);
     }
     50%
     {
        transform: translateY(1vh)
-    }
-    75%
-    {
-        transform: translateY(0vh)
-    }
-    100%
-    {
-       transform: translateY(-1vh)
-    }
-
-}
-
-@keyframes zoom-in
-{
-    0%
-    {
-        transform: scale(0);
-    }
-    100%
-    {
-        transform: scale(1);
     }
 }
 

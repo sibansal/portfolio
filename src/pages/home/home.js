@@ -9,7 +9,7 @@ class Home extends Component
     render()
     {
         return (
-            <div className='layout' id='#'>
+            <div className='layout pt-0' id='#'>
                 <div className='hero'>
                     <div className='overlay'>
                             <video width='100%' height='100%' autoPlay loop muted>

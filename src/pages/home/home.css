@@ -17,9 +17,14 @@
     min-height: 100vh;
     max-width: 100vw;
     position: absolute;
-    top: 0;
     width: 100%;
     z-index: -1;
+    top: 2.5rem;
+}
+
+.hero
+{
+    margin-top: 5rem;
 }
 
 .hero .overlay video
@@ -30,7 +35,7 @@
 .hero .intro
 {
     font-family: "Times New Roman", Times, serif;
-    font-size: 10vw;
+    font-size: 8vw;
     font-weight: bold;
     animation: 3s fade-in linear;
 }
@@ -38,7 +43,7 @@
 .hero .tagline
 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 5vw;
+    font-size: 3vw;
     font-style: italic;
     animation: 5s fade-in linear;
 }
@@ -63,11 +68,11 @@
 @media (max-width: 768px){
     .hero .intro
     {
-        font-size: 15vw;
+        font-size: 10vw;
     }
 
     .hero .tagline
     {
-        font-size: 10vw;
+        font-size: 8vw;
     }
 }

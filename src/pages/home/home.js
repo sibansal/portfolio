@@ -1,14 +1,15 @@
 import React,{ Component } from 'react';
 import './home.css'
-import logo from './../../assets/img/dp.png'
-import arrow from './../../assets/img/arrow.svg'
-import video from './../../static/mp4/hero.mp4'
+
+const logo = '/img/dp.png'
+const video = '/mp4/hero.mp4'
+const arrow = '/img/arrow.svg'
 class Home extends Component
 {
     render()
     {
         return (
-            <div className='layout'>
+            <div className='layout' id='#'>
                 <div className='hero'>
                     <div className='overlay'>
                             <video width='100%' height='100%' autoPlay loop muted>

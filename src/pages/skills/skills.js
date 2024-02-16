@@ -6,7 +6,7 @@ import Block from './../../static/components/block'
 class Skills extends Component {
     render() {
         return (
-            <div className='layout skills'>
+            <div className='layout skills' id='skills'>
                 <h2>Skills</h2>
                 <div style={{justifyContent: "center"}} className='blockContent' >
                     <div className='blockElement past'>Long ago (&gt; 6 months)</div>

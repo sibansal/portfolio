@@ -1,6 +1,6 @@
 .getconnected
 {
-    background-image: url(./../../static/svg/connect.svg);
+    background-image: url('/public/svg/connect.svg');
     background-repeat: no-repeat;
     background-position: bottom 5vw right 5vw;
     background-size: 40% 40%;
@@ -25,7 +25,7 @@
 
 .getconnected.layout .content>*
 {
-    padding: 0.5vh;
+    padding: 0.5em;
 }
 
 .getconnected.layout .content>*:hover

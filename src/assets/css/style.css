@@ -10,7 +10,7 @@
 body{
     background-color: var(--bg_color);
     color: var(--color);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
     max-height: 100vh;
     max-width: 100vw;
 }

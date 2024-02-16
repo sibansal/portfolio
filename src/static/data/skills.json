@@ -1,33 +1,53 @@
 {
-    "framework":[
-        ["Bootstrap"					,	50],
-        ["React JS"						,	60]
+    "Technical and Full-Stack Skills": [
+        {"skill": "C", "lastUsed": "past", "subcategory": "Programming Languages"},
+        {"skill": "Java", "lastUsed": "recent", "subcategory": "Programming Languages"},
+        {"skill": "JavaScript", "lastUsed": "recent", "subcategory": "Programming Languages"},
+        {"skill": "LaTeX", "lastUsed": "past", "subcategory": "Programming Languages"},
+        {"skill": "PHP", "lastUsed": "past", "subcategory": "Programming Languages"},
+        {"skill": "Python", "lastUsed": "now", "subcategory": "Programming Languages"},
+        {"skill": "SQL", "lastUsed": "now", "subcategory": "Programming Languages"},
+        {"skill": "Bootstrap", "lastUsed": "past", "subcategory": "Frameworks"},
+        {"skill": "React.js", "lastUsed": "now", "subcategory": "Frameworks"},
+        {"skill": "HTML", "lastUsed": "now", "subcategory": "Web Development"},
+        {"skill": "CSS", "lastUsed": "now", "subcategory": "Web Development"},
+        {"skill": "Eclipse", "lastUsed": "now", "subcategory": "IDEs and Editors"},
+        {"skill": "VS Code", "lastUsed": "now", "subcategory": "IDEs and Editors"},
+        {"skill": "Git", "lastUsed": "now", "subcategory": "Version Control"},
+        {"skill": "Jenkins", "lastUsed": "now", "subcategory": "CI/CD"},
+        {"skill": "Cucumber", "lastUsed": "past", "subcategory": "Testing Automation"},
+        {"skill": "Selenium", "lastUsed": "past", "subcategory": "Testing Automation"},
+        {"skill": "SSH", "lastUsed": "now", "subcategory": "SSH"},
+        {"skill": "Linux Administration", "lastUsed": "now", "subcategory": "Linux Administration"},
+        {"skill": "Kubernetes", "lastUsed": "recent", "subcategory": "Containerization"},
+        {"skill": "Docker", "lastUsed": "past", "subcategory": "Containerization"},
+        {"skill": "AWS", "lastUsed": "recent", "subcategory": "Cloud Platforms"},
+        {"skill": "DigitalOcean Droplets", "lastUsed": "past", "subcategory": "Cloud Platforms"},
+        {"skill": "Linode (Akamai Cloud)", "lastUsed": "past", "subcategory": "Cloud Platforms"},
+        {"skill": "Cloudflare Workers", "lastUsed": "recent", "subcategory": "Cloud Platforms"},
+        {"skill": "Domain DNS", "lastUsed": "recent", "subcategory": "Domain DNS"},
+        {"skill": "Jira", "lastUsed": "now", "subcategory": "Issue Tracking"},
+        {"skill": "Nginx", "lastUsed": "now", "subcategory": "Web Server"},
+        {"skill": "Apache Hive", "lastUsed": "recent", "subcategory": "Database Management"},
+        {"skill": "JSON", "lastUsed": "now", "subcategory": "JSON"},
+        {"skill": "Regular Expressions", "lastUsed": "past", "subcategory": "Regular Expressions"}
     ],
-    "tool":[
-        ["audacity"						,	40],
-        ["affinity designer"			,	60],
-        ["affinity photo"				,	60],
-        ["eclipse"						,	70],
-        ["jenkins"						,	40],
-        ["photoshop cs6"				,	60],
-        ["vs code"						,	70]
+    "Mentorship and Teaching Skills": [
+        {"skill": "Mentorship", "lastUsed": "past", "subcategory": "Mentorship and Teaching"},
+        {"skill": "Teaching Programming Concepts", "lastUsed": "now", "subcategory": "Mentorship and Teaching"},
+        {"skill": "Guidance and Support to Junior Developers", "lastUsed": "past", "subcategory": "Mentorship and Teaching"},
+        {"skill": "Code Reviews", "lastUsed": "now", "subcategory": "Mentorship and Teaching"},
+        {"skill": "Developing Learning Materials", "lastUsed": "past", "subcategory": "Mentorship and Teaching"}
     ],
-    "language":
-    [
-        ["c"							,	50],
-        ["java"							,	70],
-        ["javascript"					,	60],
-        ["latex"						,	60],
-        ["php"							,	55],
-        ["python"						,	75],
-        ["sql"							,	70]
-    ],
-    "utility":
-    [
-        ["algorithms"					,	60],
-        ["data structure"				,	60],
-        ["functional programming"		,	55],
-        ["json"							,	75],
-        ["regular expressions"			,	75]
+    "Additional Skills": [
+        {"skill": "Affinity Designer", "lastUsed": "past", "subcategory": "Graphics Design"},
+        {"skill": "Affinity Photo", "lastUsed": "past", "subcategory": "Graphics Design"},
+        {"skill": "Photoshop CC", "lastUsed": "now", "subcategory": "Graphics Design"},
+        {"skill": "Audacity", "lastUsed": "past", "subcategory": "Audio/Video Editing"},
+        {"skill": "Hit film", "lastUsed": "past", "subcategory": "Audio/Video Editing"},
+        {"skill": "Algorithms", "lastUsed": "recent", "subcategory": "Conceptual"},
+        {"skill": "Data Structures", "lastUsed": "recent", "subcategory": "Conceptual"},
+        {"skill": "Functional Programming", "lastUsed": "now", "subcategory": "Conceptual"},
+        {"skill": "Object Oriented Programming", "lastUsed": "recent", "subcategory": "Conceptual"}
     ]
 }

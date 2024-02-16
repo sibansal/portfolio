@@ -1,23 +1,27 @@
-import React,{ Component } from 'react'
+import React, { Component } from 'react'
 import './skills.css'
 import data from './../../static/data/skills.json'
-import Table from './../../static/components/table'
+import Block from './../../static/components/block'
 
-class Skills extends Component
-{
-    render()
-    {
+class Skills extends Component {
+    render() {
         return (
             <div className='layout skills'>
                 <h2>Skills</h2>
+                <div style={{justifyContent: "center"}} className='blockContent' >
+                    <div className='blockElement past'>Long ago (&gt; 6 months)</div>
+                    <div className='blockElement recent'>Recent</div>
+                    <div className='blockElement now'>Active</div>
+                </div>
+
                 <div className='content'>
-                    <Table values={data['utility']} header={["Utility", "Quotient (%)"]}></Table>
-                    <Table values={data['tool']} header={["Tool", "Quotient (%)"]}></Table>
-                    <Table values={data['framework']} header={["Framework", "Quotient (%)"]}></Table>
-                    <Table values={data['language']} header={["Language", "Quotient (%)"]}></Table>
+                    {
+                        Object.entries(data).map(
+                            (([skillset, skills]) => (<Block values={skills} header={skillset} />)
+                        ))}
                 </div>
             </div>
-          )
+        )
     }
 }
 

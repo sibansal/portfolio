@@ -1,11 +1,6 @@
 .skills
 {
     background-color: var(--bg_color_alt);
-    background-image: url(./../../static/svg/skills.svg);
-    background-repeat: no-repeat;
-    background-position: bottom 2.5vw right 2.5vw;
-    background-size: 20% 20%;
-    background-attachment: scroll;
     color: var(--color_alt);
 }
 
@@ -13,7 +8,7 @@
 .skills.layout .content
 {
     justify-content: space-around;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     max-width: 80vw;
     width: 100%;

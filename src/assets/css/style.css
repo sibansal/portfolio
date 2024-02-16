@@ -36,3 +36,54 @@ body{
     padding-top: 5vh;
     text-transform: uppercase;
 }
+
+.block{
+    text-align: left;
+    padding: 1vh 0;
+}
+
+.blockTitle
+{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.blockContent
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.blockElement
+{
+    opacity: 0.7;
+    display: block;
+    padding: 10px;
+    background-color: gainsboro;
+    color: black;
+    border-radius: 10%;
+    margin: 2.5px;
+}
+
+.blockElement:hover,.blockElement:active
+{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.blockElement.now
+{
+    background-color: greenyellow;
+}
+
+.blockElement.past
+{
+    background-color: gainsboro;
+}
+
+.blockElement.recent
+{
+    background-color: orange;
+}

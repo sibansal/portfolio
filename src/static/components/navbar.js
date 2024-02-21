@@ -15,7 +15,7 @@ class Navbar extends Component {
                     </div>
                     <div>
                         <a className="bg-gray-900 text-white py-2 px-4 rounded cursor-pointer hover:bg-white hover:text-black transition-colors duration-300 no-underline" href="#get-connected" >
-                            <span className='animate-pulse'><img src='/svg/call.svg' className='w-5 align-bottom' /> Book a call</span></a>
+                            <span className='animate-pulse'><img src='/svg/call.svg' alt='Book a call' className='w-5 align-bottom' /> Book a call</span></a>
                     </div>
                 </div>
             </nav>

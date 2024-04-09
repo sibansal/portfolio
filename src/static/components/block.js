@@ -13,7 +13,7 @@ class Block extends Component {
                 <h3 className='blockTitle'>{this.props.header}</h3>
                 <div className='blockContent'>
                     {skillset.map(skill =>
-                        (<div className={'blockElement '+skill['lastUsed']}>{skill['skill']}</div>)
+                        (<div className={'blockElement skillElement '+skill['lastUsed']}>{skill['skill']}</div>)
                     )}
                 </div>
             </div>);

@@ -16,7 +16,7 @@ class GetConnected extends Component
             <div className='layout getconnected' id='get-connected'>
                 <h2>Get Connected</h2>
                 <div className='content'>
-                    <div><a href='https://topmate.io/sibansal'><img src={callImg} className='align-middle' alt={'Book Free 1:1 Call'}/> Book 1:1 Call</a></div>
+                    {/* <div><a href='https://topmate.io/sibansal'><img src={callImg} className='align-middle' alt={'Book Free 1:1 Call'}/> Book 1:1 Call</a></div> */}
                     <div><a href='https://t.me/sibansal'><img src={telegramImg} className='align-middle' alt={'Telegram'}/> t.me/sibansal</a></div>
                     <div><a href='https://twitter.com/sibansal'><img src={twitterImg} className='align-middle' alt={'Twitter'}/> @sibansal</a></div>
                     <div><a href='https://instagram.com/isimranbansal'><TiSocialInstagramCircular size={32} className='align-middle' />@isimranbansal</a></div>

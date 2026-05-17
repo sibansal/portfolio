@@ -1,0 +1,11 @@
+export const companies = [
+  'NEUTRINOS',
+  'NOKIA',
+  'CHRISTEL HOUSE INDIA',
+  'NAVDEEP OPTICLES',
+  'ICS GROUP',
+  'COSMIC SKILLS',
+  'SHREE CREATIONS',
+  'XPERIA TECHNOLOGIES',
+
+]

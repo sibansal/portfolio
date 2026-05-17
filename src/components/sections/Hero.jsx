@@ -15,7 +15,7 @@ export default function Hero() {
     <section id="home" className="py-28 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       {/* Left */}
       <FadeIn>
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-sm font-medium text-blue-400 mb-6 font-mono">
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-500/10 border border-accent-500/20 text-sm font-medium text-accent-400 mb-6 font-mono">
           <Terminal className="w-4 h-4" />
           <span>~ / roles / research-oriented-engineer</span>
         </div>
@@ -31,7 +31,7 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-wrap gap-4 mb-12">
-          <a href="#projects" className="px-6 py-3 rounded-lg bg-primary text-white font-medium hover:bg-blue-500 transition-all shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_32px_rgba(59,130,246,0.5)] flex items-center gap-2">
+          <a href="#projects" className="px-6 py-3 rounded-lg bg-primary text-white font-medium hover:bg-accent-500 transition-all shadow-[0_0_20px_rgba(132,190,194,0.3)] hover:shadow-[0_0_32px_rgba(132,190,194,0.5)] flex items-center gap-2">
             View My Work <ArrowRight className="w-4 h-4" />
           </a>
           <a href="/Simran_Bansal-SDE-III.pdf" className="px-6 py-3 rounded-lg bg-slate-900 text-white font-medium border border-slate-700 hover:border-primary transition-colors flex items-center gap-2">
@@ -55,11 +55,11 @@ export default function Hero() {
       {/* Right — 3D profile card */}
       <FadeIn delay={0.15} className="flex justify-center lg:justify-end">
         <TiltCard>
-          <div className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 flex flex-col items-center justify-center shadow-[0_20px_60px_-10px_rgba(59,130,246,0.25)] overflow-hidden group">
+          <div className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 flex flex-col items-center justify-center shadow-[0_20px_60px_-10px_rgba(132,190,194,0.25)] overflow-hidden group">
             <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors" />
             {/* Replace the block below with <img src="/profile.jpg" ... /> */}
             <ImageIcon className="w-16 h-16 text-slate-500 mb-3" />
-            <img className="text-slate-500 font-mono text-sm" src='/simran-bansal-dp.png' alt='Simran Bansal'/>
+            <img className="text-slate-500 font-mono text-sm w-full h-full" src='/simran-bansal-dp.png' alt='Simran Bansal'/>
             <div className="absolute bottom-4 left-4 right-4 bg-slate-950/80 backdrop-blur rounded-xl p-4 border border-slate-800 flex items-center gap-3">
               <div className="w-2.5 h-2.5 bg-orange-400 rounded-full animate-pulse flex-shrink-0" />
               <span className="text-xs text-slate-300">Working at Neutrinos on PoC development, rapid prototyping, and scalable product solutions.</span>

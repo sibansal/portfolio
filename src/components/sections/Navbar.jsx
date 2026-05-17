@@ -23,7 +23,7 @@ export default function Navbar() {
           </a>
         ))}
       </div>
-      <a href="#contact" className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white text-sm font-medium hover:bg-blue-500 transition-colors shadow-[0_0_16px_rgba(59,130,246,0.3)]">
+      <a href="#contact" className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white text-sm font-medium hover:bg-accent-500 transition-colors shadow-[0_0_16px_rgba(132,190,194,0.3)]">
         Hire Me
       </a>
     </nav>

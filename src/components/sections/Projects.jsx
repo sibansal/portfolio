@@ -17,7 +17,7 @@ export default function Projects() {
         {projects.map((p, i) => (
           <TiltCard key={i}>
             <div className="p-8 rounded-2xl bg-slate-900 border border-slate-800 hover:border-primary/50 transition-colors h-full flex flex-col relative overflow-hidden group">
-              <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary to-blue-300 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary to-accent-300 opacity-0 group-hover:opacity-100 transition-opacity" />
               <h3 className="text-lg font-semibold text-white mb-2">{p.title}</h3>
               <p className="text-slate-400 text-sm mb-6 flex-grow">{p.desc}</p>
               <div className="mb-6">

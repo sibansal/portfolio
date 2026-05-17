@@ -5,8 +5,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg:      '#020617',
-        primary: '#3b82f6',
+        bg: '#061316',
+        primary: '#538e97',
+        accent: {
+          100: '#DCEBED',
+          200: '#BDD7DB',
+          300: '#9CC2C8',
+          400: '#79AAB2',
+          500: '#4F8C96',
+          600: '#437882',
+          700: '#37666D',
+          800: '#294C52',
+        },
       },
       backgroundImage: {
         'grid-faint': "linear-gradient(to right,#ffffff08 1px,transparent 1px),linear-gradient(to bottom,#ffffff08 1px,transparent 1px)",

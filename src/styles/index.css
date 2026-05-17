@@ -4,7 +4,7 @@
 
 @layer base {
   html { scroll-behavior: smooth; }
-  body { background-color: #020617; }
+  body { background-color: #061316; }
 }
 
 @layer utilities {

@@ -6,6 +6,6 @@ export const companies = [
   'ICS GROUP',
   'COSMIC SKILLS',
   'SHREE CREATIONS',
+  'DEVINE ASTRO',
   'XPERIA TECHNOLOGIES',
-
 ]

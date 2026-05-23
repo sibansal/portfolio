@@ -4,10 +4,10 @@ import FadeIn from '@/components/ui/FadeIn'
 import TiltCard from '@/components/ui/TiltCard'
 
 const metrics = [
-  { value: '80%',  label: 'Reduced reporting turnaround at Nokia' },
-  { value: '40%',  label: 'Improved page performance as freelancer' },
-  { value: '10+',  label: 'Containerized analytics deployments' },
-  { value: '30%',  label: 'Faster frontend delivery via reusable systems' },
+  { value: '80%', label: 'Reduced reporting turnaround at Nokia' },
+  { value: '40%', label: 'Improved page performance as freelancer' },
+  { value: '10+', label: 'Containerized analytics deployments' },
+  { value: '30%', label: 'Faster frontend delivery via reusable systems' },
 ]
 
 export default function Hero() {
@@ -32,13 +32,10 @@ export default function Hero() {
 
         <div className="flex flex-wrap gap-4 mb-12">
           <a href="#projects" className="px-6 py-3 rounded-lg bg-primary text-white font-medium hover:bg-accent-500 transition-all shadow-[0_0_20px_rgba(132,190,194,0.3)] hover:shadow-[0_0_32px_rgba(132,190,194,0.5)] flex items-center gap-2">
-            View My Work <ArrowRight className="w-4 h-4" />
+            <FileText className="w-4 h-4" /> View My Work <ArrowRight className="w-4 h-4" />
           </a>
-          <a href="/Simran_Bansal-SDE-III.pdf" className="px-6 py-3 rounded-lg bg-slate-900 text-white font-medium border border-slate-700 hover:border-primary transition-colors flex items-center gap-2">
-            <FileText className="w-4 h-4" /> Download Resume
-          </a>
-          <a href="#contact" className="px-6 py-3 text-slate-400 hover:text-white transition-colors flex items-center gap-2">
-            <Mail className="w-4 h-4" /> Contact
+          <a href="#contact" className="px-6 py-3 rounded-lg bg-slate-900 text-white font-medium border border-slate-700 hover:border-primary transition-colors flex items-center gap-2">
+            <Mail className="w-4 h-4" /> Contact Me
           </a>
         </div>
 
@@ -59,7 +56,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors" />
             {/* Replace the block below with <img src="/profile.jpg" ... /> */}
             <ImageIcon className="w-16 h-16 text-slate-500 mb-3" />
-            <img className="text-slate-500 font-mono text-sm w-full h-full" src='/simran-bansal-dp.png' alt='Simran Bansal'/>
+            <img className="text-slate-500 font-mono text-sm w-full h-full" src='/simran-bansal-dp.png' alt='Simran Bansal' />
             <div className="absolute bottom-4 left-4 right-4 bg-slate-950/80 backdrop-blur rounded-xl p-4 border border-slate-800 flex items-center gap-3">
               <div className="w-2.5 h-2.5 bg-orange-400 rounded-full animate-pulse flex-shrink-0" />
               <span className="text-xs text-slate-300">Working at Neutrinos on PoC development, rapid prototyping, and scalable product solutions.</span>

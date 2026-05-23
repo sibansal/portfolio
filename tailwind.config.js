@@ -21,6 +21,20 @@ export default {
       backgroundImage: {
         'grid-faint': "linear-gradient(to right,#ffffff08 1px,transparent 1px),linear-gradient(to bottom,#ffffff08 1px,transparent 1px)",
       },
+      keyframes: {
+        typing: {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
+        },
+        blink: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0' },
+        },
+      },
+      animation: {
+        typing: 'typing 3s steps(40, end) forwards',
+        cursor: 'blink 1s infinite 3s',
+      },
     },
   },
   plugins: [],

@@ -15,9 +15,17 @@ export default function Hero() {
     <section id="home" className="py-28 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       {/* Left */}
       <FadeIn>
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-500/10 border border-accent-500/20 text-sm font-medium text-accent-400 mb-6 font-mono">
-          <Terminal className="w-4 h-4" />
-          <span>~ / roles / research-oriented-engineer</span>
+
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-500/10 border border-accent-500/20 text-sm font-medium text-accent-400 mb-6 font-mono overflow-hidden">
+          <Terminal className="w-4 h-4 shrink-0" />
+
+          <div className="flex items-center whitespace-nowrap">
+            <span className="overflow-hidden animate-typing inline-block">
+              ~ / roles / research-oriented-engineer
+            </span>
+
+            <span className="animate-cursor ml-0.5">_</span>
+          </div>
         </div>
 
         <h1 className="text-5xl sm:text-6xl font-bold tracking-tight mb-6 text-white leading-[1.1]">

@@ -1,16 +1,16 @@
 import React from 'react'
-import Navbar       from '@/components/sections/Navbar'
-import Hero         from '@/components/sections/Hero'
-import Companies    from '@/components/sections/Companies'
-import About        from '@/components/sections/About'
-import Projects     from '@/components/sections/Projects'
-import Skills       from '@/components/sections/Skills'
-import Experience   from '@/components/sections/Experience'
-import ResearchAreas from '@/components/sections/ResearchAreas'
-import CurrentFocus from '@/components/sections/CurrentFocus'
-import Contact      from '@/components/sections/Contact'
-import Footer       from '@/components/sections/Footer'
-import BgGlow       from '@/components/ui/BgGlow'
+import Navbar             from '@/components/sections/Navbar'
+import Hero               from '@/components/sections/Hero'
+import Companies          from '@/components/sections/Companies'
+import AreasOfExploration from '@/components/sections/AreasOfExploration'
+import Projects           from '@/components/sections/Projects'
+import HowIBuild          from '@/components/sections/HowIBuild'
+import Experience         from '@/components/sections/Experience'
+import Skills             from '@/components/sections/Skills'
+import About              from '@/components/sections/About'
+import Contact            from '@/components/sections/Contact'
+import Footer             from '@/components/sections/Footer'
+import BgGlow             from '@/components/ui/BgGlow'
 
 export default function App() {
   return (
@@ -21,12 +21,12 @@ export default function App() {
         <main>
           <Hero />
           <Companies />
-          <About />
-          <ResearchAreas />
+          <AreasOfExploration />
           <Projects />
-          <Skills />
+          <HowIBuild />
           <Experience />
-          <CurrentFocus />
+          <Skills />
+          <About />
           <Contact />
         </main>
         <Footer />

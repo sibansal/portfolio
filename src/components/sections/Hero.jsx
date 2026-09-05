@@ -64,29 +64,99 @@ export default function Hero() {
       {/* Right — Profile Card */}
       <FadeIn delay={0.15} className="flex justify-center lg:justify-end">
         <TiltCard>
-          <div className="relative w-80 h-96 sm:w-96 sm:h-[420px] rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 flex flex-col items-center justify-between shadow-[0_20px_60px_-10px_rgba(132,190,194,0.25)] overflow-hidden group p-4">
-            <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors pointer-events-none" />
-            
-            {/* Top pill */}
-            <div className="w-full z-10 text-center">
-              <span className="text-[11px] font-mono text-slate-400 bg-slate-950/80 px-3 py-1 rounded-full border border-slate-800">
+          {/* Card: fixed width ~415px, flex-col, no padding so strip can bleed to edges */}
+          <div
+            className="relative flex flex-col rounded-[18px] overflow-hidden group shadow-[0_20px_60px_-10px_rgba(132,190,194,0.25)]"
+            style={{
+              width: '415px',
+              background: '#080e1a',
+              border: '1px solid rgba(32,160,160,0.35)',
+            }}
+          >
+            <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/8 transition-colors pointer-events-none z-0" />
+
+            {/* Top pill — tight padding above portrait */}
+            <div className="relative z-10 flex justify-center pt-3 pb-2">
+              <span
+                className="text-[11px] font-mono px-3 rounded-full"
+                style={{
+                  color: '#7ecece',
+                  background: 'rgba(8,22,36,0.85)',
+                  border: '1px solid rgba(32,160,160,0.4)',
+                  lineHeight: '28px',
+                  display: 'inline-block',
+                }}
+              >
                 R&D / PoC · Full-Stack Systems · AI · Infra
               </span>
             </div>
 
-            {/* Profile Image */}
-            <div className="relative w-44 h-44 sm:w-48 sm:h-48 rounded-2xl overflow-hidden border border-slate-700/80 my-auto shadow-inner bg-slate-950">
+            {/* Portrait — dominant hero element, ~87% card width */}
+            <div
+              className="relative z-10 overflow-hidden"
+              style={{
+                margin: '0 27px 10px 27px',
+                height: '375px',
+                borderRadius: '15px',
+                border: '1px solid rgba(32,160,160,0.35)',
+                background: '#0a1520',
+                flexShrink: 0,
+              }}
+            >
               <img
-                className="w-full h-full object-cover"
                 src="/simran-bansal-dp.png"
                 alt="Simran Bansal"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  objectPosition: 'center top',
+                  display: 'block',
+                }}
               />
             </div>
 
-            {/* Bottom Status Card */}
-            <div className="w-full bg-slate-950/90 backdrop-blur rounded-xl p-3.5 border border-slate-800 flex items-center gap-3 z-10">
-              <div className="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse flex-shrink-0" />
-              <span className="text-xs text-slate-300 leading-relaxed">
+            {/* Working strip — full-width footer anchored to bottom */}
+            <div
+              className="relative z-10 flex items-center gap-0"
+              style={{
+                background: '#060b11',
+                borderTop: '1px solid rgba(32,160,160,0.25)',
+                minHeight: '88px',
+                padding: '14px 18px',
+              }}
+            >
+              {/* Green status dot */}
+              <div
+                className="animate-pulse flex-shrink-0"
+                style={{
+                  width: '9px',
+                  height: '9px',
+                  borderRadius: '50%',
+                  background: '#34d399',
+                  boxShadow: '0 0 8px 2px rgba(52,211,153,0.55)',
+                  marginRight: '14px',
+                }}
+              />
+              {/* Vertical divider */}
+              <div
+                style={{
+                  width: '1px',
+                  height: '52px',
+                  background: 'rgba(32,160,160,0.35)',
+                  flexShrink: 0,
+                  marginRight: '14px',
+                }}
+              />
+              {/* Status text */}
+              <span
+                style={{
+                  fontSize: '12px',
+                  color: '#c8d8e4',
+                  lineHeight: '1.6',
+                  fontFamily: 'inherit',
+                }}
+              >
                 Working at Neutrinos on PoC development, rapid prototyping, scalable product solutions, and technical exploration.
               </span>
             </div>

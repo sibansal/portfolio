@@ -268,7 +268,7 @@ The `CNAME` file is automatically generated during deployment.
 ### Email
 
 ```txt
-hireme@sibansal.dev
+queries@sibansal.dev
 ```
 
 ### Location

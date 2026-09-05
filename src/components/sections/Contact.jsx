@@ -18,11 +18,11 @@ export default function Contact() {
         </p>
         <ul className="space-y-3">
           <li>
-            <a href="mailto:hireme@sibansal.dev" className="flex items-center gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-primary/50 text-slate-300 hover:text-white transition-all">
+            <a href="mailto:queries@sibansal.dev" className="flex items-center gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-primary/50 text-slate-300 hover:text-white transition-all">
               <Mail className="w-5 h-5 text-primary" />
               <div>
                 <div className="text-xs text-slate-500">Email</div>
-                <div className="font-medium text-sm">hireme@sibansal.dev</div>
+                <div className="font-medium text-sm">queries@sibansal.dev</div>
               </div>
             </a>
           </li>

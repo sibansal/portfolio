@@ -76,15 +76,17 @@ export default function Hero() {
             <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/8 transition-colors pointer-events-none z-0" />
 
             {/* Top pill — tight padding above portrait */}
-            <div className="relative z-10 flex justify-center pt-3 pb-2">
+            <div className="relative flex justify-center">
               <span
-                className="text-[11px] font-mono px-3 rounded-full"
+                className="text-[11px] font-mono px-3 rounded-full mt-1"
                 style={{
                   color: '#7ecece',
                   background: 'rgba(8,22,36,0.85)',
                   border: '1px solid rgba(32,160,160,0.4)',
                   lineHeight: '28px',
                   display: 'inline-block',
+                  position: 'absolute',
+                  zIndex: 20
                 }}
               >
                 R&D / PoC · Full-Stack Systems · AI · Infra
@@ -95,9 +97,9 @@ export default function Hero() {
             <div
               className="relative z-10 overflow-hidden"
               style={{
-                margin: '0 27px 10px 27px',
+                // margin: '0 27px 10px 27px',
                 height: '375px',
-                borderRadius: '15px',
+                // borderRadius: '15px',
                 border: '1px solid rgba(32,160,160,0.35)',
                 background: '#0a1520',
                 flexShrink: 0,
@@ -126,14 +128,14 @@ export default function Hero() {
                 padding: '14px 18px',
               }}
             >
-              {/* Green status dot */}
+              {/* Yellow status dot */}
               <div
                 className="animate-pulse flex-shrink-0"
                 style={{
                   width: '9px',
                   height: '9px',
                   borderRadius: '50%',
-                  background: '#34d399',
+                  background: '#d3b634ff',
                   boxShadow: '0 0 8px 2px rgba(52,211,153,0.55)',
                   marginRight: '14px',
                 }}

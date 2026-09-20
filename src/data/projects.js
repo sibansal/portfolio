@@ -1,6 +1,25 @@
 export const projects = [
   {
+    title: 'OneSync — macOS OneDrive Mirror',
+    source: 'Open Source',
+    desc: 'High-performance macOS Apple Silicon desktop app that mirrors OneDrive to external storage with atomic safety, zero cloud deletion risk, and drive-portable SQLite state tracking.',
+    focus: ['Desktop App', 'Systems Engineering', 'Apple Silicon', 'Data Safety'],
+    tech: ['Electron', 'React.js', 'TypeScript', 'SQLite', 'Graph API', 'Tailwind CSS'],
+    problem: 'Cloud-mirroring tools risk accidental cloud deletion, lack atomic transfer guarantees, and fail to isolate state portably on external drives.',
+    approach: 'Engineered read-only Graph API pipeline with isolated .tmp/*.part download buffers, cryptographic hash verification, and external volume guardian.',
+    achievements: [
+      '100% read-only Graph API scopes guaranteeing zero cloud mutation or deletion',
+      'Atomic transfer buffers with QuickXorHash / SHA-256 verification and HTTP Range resumption',
+      'Drive-portable SQLite tracking (state.db) traveling with external APFS/exFAT drives',
+    ],
+    live_link: 'https://onesync.sibansal.dev/',
+    code_link: 'https://github.com/sibansal/onesync',
+    releases_link: 'https://github.com/sibansal/onesync/releases',
+    case_study_link: '',
+  },
+  {
     title: 'Project Orion — AI Startup Core',
+    source: 'Closed Source',
     desc: 'Led core full-stack architecture and frontend product development for an AI startup platform, enabling rapid user workflow iterations and responsive interface execution.',
     focus: ['AI Product Development', 'Reusable Systems', 'Performance', 'Rapid Delivery'],
     tech: ['React.js', 'Next.js', 'Node.js', 'Tailwind CSS'],
@@ -16,6 +35,7 @@ export const projects = [
   },
   {
     title: 'Analytics & Report Automation Suite',
+    source: 'Closed Source',
     desc: 'Engineered an end-to-end data processing and reporting automation engine at Nokia handling high-volume datasets across enterprise operations.',
     focus: ['Automation', 'ETL Pipelines', 'Large Datasets', 'Reporting Infrastructure'],
     tech: ['Python', 'Hive', 'Linux', 'SQL'],
@@ -31,6 +51,7 @@ export const projects = [
   },
   {
     title: 'ClickHouse Deployment on Kubernetes',
+    source: 'Closed Source',
     desc: 'Architected and deployed high-performance OLAP database infrastructure over Linode Kubernetes Clusters for fast analytical query workloads.',
     focus: ['Kubernetes', 'Docker', 'ClickHouse', 'Infrastructure', 'OLAP'],
     tech: ['Kubernetes', 'Docker', 'ClickHouse', 'Linode'],
@@ -46,6 +67,7 @@ export const projects = [
   },
   {
     title: 'Spring Boot API Modernization',
+    source: 'Closed Source',
     desc: 'Modernized mission-critical backend service aggregator with Swagger 3, microservice separation, and enhanced security hardening.',
     focus: ['Backend Engineering', 'API Modernization', 'Microservices', 'Security'],
     tech: ['Spring Boot', 'Java', 'Swagger 3', 'Microservices'],

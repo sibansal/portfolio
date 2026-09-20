@@ -11,7 +11,7 @@ export default function Projects() {
   const hasMore = projects.length > 4
 
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-20 scroll-mt-20">
       <FadeIn>
         <SectionHeading label="Selected Work" />
         <p className="text-slate-400 mb-10 max-w-2xl -mt-4 text-sm leading-relaxed">

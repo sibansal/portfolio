@@ -23,7 +23,7 @@ const facts = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 border-t border-slate-800/80 grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+    <section id="about" className="py-24 scroll-mt-15 border-t border-slate-800/80 grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
       <FadeIn>
         <SectionHeading label="About Me" />
         <div className="space-y-4 text-slate-300 text-sm leading-relaxed -mt-2">

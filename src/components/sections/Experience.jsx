@@ -5,7 +5,7 @@ import { Briefcase } from 'lucide-react'
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24">
+    <section id="experience" className="py-24 scroll-mt-20">
       <FadeIn>
         <SectionHeading label="Experience" />
         <p className="text-slate-400 mb-12 max-w-2xl -mt-4 text-sm leading-relaxed">

@@ -13,7 +13,7 @@ const icons = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24">
+    <section id="skills" className="py-24 scroll-mt-20">
       <FadeIn>
         <SectionHeading label="Technical Stack" />
         <p className="text-slate-400 mb-12 max-w-2xl -mt-4 text-sm leading-relaxed">

@@ -10,7 +10,7 @@ const socials = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 border-t border-slate-800 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+    <section id="contact" className="py-24 scroll-mt-20 border-t border-slate-800 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
       <FadeIn>
         <SectionHeading label="Let's Build Something" />
         <p className="text-slate-400 mb-8 max-w-md text-sm leading-relaxed -mt-2">

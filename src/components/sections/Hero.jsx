@@ -11,7 +11,7 @@ const metrics = [
 
 export default function Hero() {
   return (
-    <section id="home" className="py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section id="home" className="py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center scroll-mt-10">
       {/* Left */}
       <FadeIn>
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-500/10 border border-accent-500/20 text-sm font-medium text-accent-400 mb-6 font-mono overflow-hidden">

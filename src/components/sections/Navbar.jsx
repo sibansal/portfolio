@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import { Menu, X, ArrowRight, ExternalLink } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -13,10 +13,84 @@ const links = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const [isVisible, setIsVisible] = useState(true)
+  const timerRef = useRef(null)
+
+  // Reset the 5-second timer on click or interaction
+  const resetTimer = useCallback(() => {
+    setIsVisible(true)
+    if (timerRef.current) clearTimeout(timerRef.current)
+    timerRef.current = setTimeout(() => {
+      if (!isOpen) {
+        setIsVisible(false)
+      }
+    }, 5000)
+  }, [isOpen])
+
+  // Manage timer on mount and when mobile menu opens/closes
+  useEffect(() => {
+    if (isOpen) {
+      setIsVisible(true)
+      if (timerRef.current) clearTimeout(timerRef.current)
+    } else {
+      resetTimer()
+    }
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current)
+    }
+  }, [isOpen, resetTimer])
+
+  // Reveal when hovering/touching top of screen or scrolling up
+  useEffect(() => {
+    let lastScrollY = window.scrollY
+
+    const handleMouseMove = (e) => {
+      if (e.clientY <= 70) {
+        resetTimer()
+      }
+    }
+
+    const handleTouchStart = (e) => {
+      if (e.touches && e.touches[0] && e.touches[0].clientY <= 70) {
+        resetTimer()
+      }
+    }
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      if (currentScrollY < lastScrollY || currentScrollY <= 50) {
+        resetTimer()
+      }
+      lastScrollY = currentScrollY
+    }
+
+    window.addEventListener('mousemove', handleMouseMove, { passive: true })
+    window.addEventListener('touchstart', handleTouchStart, { passive: true })
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove)
+      window.removeEventListener('touchstart', handleTouchStart)
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [resetTimer])
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 pt-3 md:pt-4 px-4 sm:px-6 pointer-events-none">
-      <div className="max-w-4xl mx-auto rounded-2xl border border-slate-800/80 bg-bg/90 backdrop-blur-xl shadow-2xl px-4 sm:px-6 py-2.5 md:py-3 pointer-events-auto relative">
+    <>
+      {/* Invisible trigger area at top of viewport */}
+      <div
+        className="fixed top-0 left-0 right-0 h-4 z-40 pointer-events-auto"
+        onMouseEnter={resetTimer}
+        onTouchStart={resetTimer}
+      />
+
+      <header
+        onClick={resetTimer}
+        className={`fixed top-0 left-0 right-0 z-50 pt-3 md:pt-4 px-4 sm:px-6 pointer-events-none transition-all duration-300 ease-in-out ${
+          isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
+        }`}
+      >
+        <div className="max-w-4xl mx-auto rounded-2xl border border-slate-800/80 bg-bg/90 backdrop-blur-xl shadow-2xl px-4 sm:px-6 py-2.5 md:py-3 pointer-events-auto relative">
         <nav className="flex justify-between items-center">
           {/* Brand Logo */}
           <a
@@ -105,5 +179,6 @@ export default function Navbar() {
         </AnimatePresence>
       </div>
     </header>
-  )
+  </>
+)
 }
